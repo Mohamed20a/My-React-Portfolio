@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ce791618.css",
+    "main.js": "/static/js/main.5bcfc36a.js",
+    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/Quiz.png": "/static/media/Quiz.255def3f01468e363220.png",
+    "static/media/2.png": "/static/media/2.ecb210fca9e307f359c7.png",
+    "static/media/cleaning.png": "/static/media/cleaning.7db00e49ad2dffcd851a.png",
+    "static/media/mail.png": "/static/media/mail.9b8ff42c525737575675.png",
+    "static/media/weather.png": "/static/media/weather.3ba5311b70d378c07e89.png",
+    "static/media/food1.png": "/static/media/food1.71d8e13af6d810b3716e.png",
+    "static/media/quran.png": "/static/media/quran.9341191eb216f2aa24fc.png",
+    "static/media/clinic.png": "/static/media/clinic.b71643208ef44dca13df.png",
+    "static/media/file.png": "/static/media/file.33a987f939ffc6392966.png",
+    "static/media/1.png": "/static/media/1.3a4680377741901f8227.png",
+    "static/media/islam.png": "/static/media/islam.1e1419f8001a51bf53e9.png",
+    "static/media/down1.png": "/static/media/down1.72f15a8a4dcbe6ba9b47.png",
+    "static/media/me.jpg": "/static/media/me.8dfa3ba80ba30bab5492.jpg",
+    "static/media/landing page.png": "/static/media/landing page.0838b86d272f748e0a5e.png",
+    "static/media/old portofolio.png": "/static/media/old portofolio.e8971ef9b981f0208967.png",
+    "static/media/QR code.png": "/static/media/QR code.6ae9739cbe88ba6d2e96.png",
+    "static/media/new.png": "/static/media/new.894a277bfc381c772191.png",
+    "static/media/x-o.png": "/static/media/x-o.3472b0e223e2649e202e.png",
+    "static/media/coding.png": "/static/media/coding.12469f3ed517d6d03c8a.png",
+    "index.html": "/index.html",
+    "main.ce791618.css.map": "/static/css/main.ce791618.css.map",
+    "main.5bcfc36a.js.map": "/static/js/main.5bcfc36a.js.map",
+    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ce791618.css",
+    "static/js/main.5bcfc36a.js"
+  ]
+}
