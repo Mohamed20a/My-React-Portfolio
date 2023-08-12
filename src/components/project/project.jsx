@@ -31,16 +31,16 @@ class Project extends Component {
     constructor(props) {
         super(props);
         this.state = {
-          showImages: false, // تهيئة الحالة الافتراضية لعدم إظهار الصور
+          showImages: false, 
         };
     }
 
     handleShowImages = () => {
-      this.setState({ showImages: true }); // تعيين الحالة لإظهار الصور
+      this.setState({ showImages: true }); 
     };
 
     handleHideImages = () => {
-      this.setState({ showImages: false }); // تعيين الحالة لإخفاء الصور
+      this.setState({ showImages: false }); 
     };
 
 render() {
