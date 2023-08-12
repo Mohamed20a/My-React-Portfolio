@@ -45,7 +45,6 @@ const Contact = () => {
   };
 
   const handleReset = () => {
-    // إعادة ضبط الحقول عند النقر على زر "Reset"
     setName('');
     setEmail('');
     setMessage('');
@@ -70,7 +69,6 @@ const Contact = () => {
 
       if (response.ok) {
         console.log('تم إرسال النموذج بنجاح!');
-        // هنا يمكنك إضافة أي إجراء إضافي بعد الإرسال بنجاح
       } else {
         console.error('حدث خطأ أثناء إرسال النموذج.');
       }
