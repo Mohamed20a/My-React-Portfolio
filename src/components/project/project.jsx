@@ -6,6 +6,7 @@ import Footer from "../footer/footer";
 import Quran from '../../assets/img/quran.png';
 import Down from '../../assets/img/down1.png';
 import Islamic from '../../assets/img/islam.png';
+import Nportfolio from '../../assets/img/new port.png';
 import rweather from '../../assets/img/weather.png';
 import Mail from '../../assets/img/mail.png';
 import Food from '../../assets/img/food1.png';
@@ -50,10 +51,10 @@ render() {
 
                 <div className="container mx-auto">
         
-        <div className="sentence-container">
-            <div className="side-line" data-aos="fade-right" data-aos-delay="100"></div>
-            <h2 data-aos="fade-left" data-aos-delay="100"><span className="h2">03.</span> Projects</h2>
-        </div>
+                    <div className="sentence-container">
+                        <div className="side-line" data-aos="fade-right" data-aos-delay="100"></div>
+                        <h2 data-aos="fade-left" data-aos-delay="100" style={{fontFamily: 'elmessiri-bold'}}><span className="h2">03.</span> Projects</h2>
+                    </div>
 
                     <div className="row justify-content-center" id="project-card">
                         <div className="row justify-content-center js-scroll fade-btm scrolled">
@@ -70,13 +71,13 @@ render() {
                                 <div className="card-link">
                                     <h5 className="card-title">Qurank Kareem</h5>
                                     <div>
-                                        <a className="link" target="blank" href="https://github.com/Mohamed20a/qurank-kareem"><i className="fa-brands fa-github"></i></a>
-                                        <a className="link" target="blank" href="https://qurank-kareem.netlify.app/"><i className="fa-solid fa-up-right-from-square"></i></a>
+                                        <a className="link" target="blank" href="https://github.com/Mohamed20a/qurank-kareem"><i className="fa-brands fa-github" id="link"></i></a>
+                                        <a className="link" target="blank" href="https://qurank-kareem.netlify.app/"><i className="fa-solid fa-up-right-from-square" id="link"></i></a>
                                     </div>
                                 </div>
                                 <div className="item js-scroll fade-btm scrolled">
                                     <a href="https://qurank-kareem.netlify.app/" target="_blank" class="item-overlay">
-                                        <p className="demo">Live Demo</p>
+                                        <p className="demo">Live Demo <i class="fa-solid fa-link"></i></p>
                                     </a>
                                     <img src={Quran} className="card-img-top" alt="..." />
                                 </div>
@@ -91,13 +92,13 @@ render() {
                                 <div className="card-link">
                                     <h5 className="card-title">MAG Downloader</h5>
                                     <div>
-                                        <a className="link" target="blank" href="https://github.com/Mohamed20a/Media-Downloader"><i className="fa-brands fa-github"></i></a>
-                                        <a className="link" target="blank" href="https://mag-downloader.netlify.app"><i className="fa-solid fa-up-right-from-square"></i></a>
+                                        <a className="link" target="blank" href="https://github.com/Mohamed20a/Media-Downloader"><i className="fa-brands fa-github" id="link"></i></a>
+                                        <a className="link" target="blank" href="https://mag-downloader.netlify.app"><i className="fa-solid fa-up-right-from-square" id="link"></i></a>
                                     </div>
                                 </div>
                                 <div className="item js-scroll fade-btm scrolled">
                                     <a href="https://mag-downloader.netlify.app" target="_blank" class="item-overlay">
-                                        <p className="demo">Live Demo</p>
+                                        <p className="demo">Live Demo <i class="fa-solid fa-link"></i></p>
                                     </a>
                                     <img src={Down} className="card-img-top" alt="..." />
                                 </div>
@@ -112,13 +113,13 @@ render() {
                                 <div className="card-link">
                                     <h5 className="card-title">Islamic</h5>
                                     <div>
-                                        <a className="link" target="blank" href="https://github.com/Mohamed20a/Islamic"><i className="fa-brands fa-github"></i></a>
-                                        <a className="link" target="blank" href="https://el-islam.netlify.app"><i className="fa-solid fa-up-right-from-square"></i></a>
+                                        <a className="link" target="blank" href="https://github.com/Mohamed20a/Islamic"><i className="fa-brands fa-github" id="link"></i></a>
+                                        <a className="link" target="blank" href="https://el-islam.netlify.app"><i className="fa-solid fa-up-right-from-square" id="link"></i></a>
                                     </div>
                                 </div>
                                 <div className="item js-scroll fade-btm scrolled">
                                     <a href="https://el-islam.netlify.app" target="_blank" class="item-overlay">
-                                        <p className="demo">Live Demo</p>
+                                        <p className="demo">Live Demo <i class="fa-solid fa-link"></i></p>
                                     </a>
                                     <img src={Islamic} className="card-img-top" alt="..." />
                                 </div>
@@ -128,23 +129,23 @@ render() {
                                 </div>
                             </div>
     
-                            {/* React Weather Card */}
+                            {/* My Portfolio Card */}
                             <div className="card col-md-6 col-lg-4 mb-5 p-3" data-aos="fade-up" data-aos-delay="300" id="card-project">
                                 <div className="card-link">
-                                    <h5 className="card-title">React Weather</h5>
+                                    <h5 className="card-title">My Portfolio</h5>
                                     <div>
-                                        <a className="link" target="blank" href="https://github.com/Mohamed20a/React-Weather-App"><i className="fa-brands fa-github"></i></a>
-                                        <a className="link" target="blank" href="https://react-weather1.netlify.app"><i className="fa-solid fa-up-right-from-square"></i></a>
+                                        <a className="link" target="blank" href="https://github.com/Mohamed20a/New-Portfolio"><i className="fa-brands fa-github" id="link"></i></a>
+                                        <a className="link" target="blank" href="https://mohammed-ahmed.netlify.app"><i className="fa-solid fa-up-right-from-square" id="link"></i></a>
                                     </div>
                                 </div>
                                 <div className="item js-scroll fade-btm scrolled">
-                                    <a href="https://react-weather1.netlify.app" target="_blank" class="item-overlay">
-                                        <p className="demo">Live Demo</p>
+                                    <a href="https://mohammed-ahmed.netlify.app" target="_blank" class="item-overlay">
+                                        <p className="demo">Live Demo <i class="fa-solid fa-link"></i></p>
                                     </a>
-                                    <img src={rweather} className="card-img-top" alt="..." />
+                                    <img src={Nportfolio} className="card-img-top" alt="..." />
                                 </div>
                                 <div className="card-body">
-                                    <p className="card-text">A simple React weather app that allows you to get current weather information, based on the city you enter.</p>
+                                    <p className="card-text">My personal website build with React.js.</p>
                                     
                                 </div>
                             </div>
@@ -154,13 +155,13 @@ render() {
                                 <div className="card-link">
                                     <h5 className="card-title">Quran Mail</h5>
                                     <div>
-                                        <a className="link" target="blank" href="https://github.com/Mohamed20a/Quran-Mail"><i className="fa-brands fa-github"></i></a>
-                                        <a className="link" target="blank" href="https://quran-mail.000webhostapp.com/"><i className="fa-solid fa-up-right-from-square"></i></a>
+                                        <a className="link" target="blank" href="https://github.com/Mohamed20a/Quran-Mail"><i className="fa-brands fa-github" id="link"></i></a>
+                                        <a className="link" target="blank" href="https://quran-mail.000webhostapp.com/"><i className="fa-solid fa-up-right-from-square" id="link"></i></a>
                                     </div>
                                 </div>
                                 <div className="item js-scroll fade-btm scrolled">
                                     <a href="https://quran-mail.000webhostapp.com/" target="_blank" class="item-overlay">
-                                        <p className="demo">Live Demo</p>
+                                        <p className="demo">Live Demo <i class="fa-solid fa-link"></i></p>
                                     </a>
                                     <img src={Mail} className="card-img-top" alt="..." />
                                 </div>
@@ -175,13 +176,13 @@ render() {
                                 <div className="card-link">
                                     <h5 className="card-title">React Restaurant</h5>
                                     <div>
-                                        <a className="link" target="blank" href="https://github.com/Mohamed20a/React-Restaurant-App"><i className="fa-brands fa-github"></i></a>
-                                        <a className="link" target="blank" href="https://mohamed20a.github.io/React-Restaurant-App/"><i className="fa-solid fa-up-right-from-square"></i></a>
+                                        <a className="link" target="blank" href="https://github.com/Mohamed20a/React-Restaurant-App"><i className="fa-brands fa-github" id="link"></i></a>
+                                        <a className="link" target="blank" href="https://mohamed20a.github.io/React-Restaurant-App/"><i className="fa-solid fa-up-right-from-square" id="link"></i></a>
                                     </div>
                                 </div>
                                 <div className="item js-scroll fade-btm scrolled">
                                     <a href="https://mohamed20a.github.io/React-Restaurant-App/" target="_blank" class="item-overlay">
-                                        <p className="demo">Live Demo</p>
+                                        <p className="demo">Live Demo <i class="fa-solid fa-link"></i></p>
                                     </a>
                                     <img src={Food} className="card-img-top" alt="..." />
                                 </div>
@@ -196,18 +197,39 @@ render() {
                             <div id="images row" style={{ display: this.state.showImages ? "contents" : "none" }}>
                               {/* إضافة الصور هنا */}
                 
+                                {/* React Weather Card */}
+                                <div className="card col-md-6 col-lg-4 mb-5 p-3" data-aos="fade-up" data-aos-delay="300" id="card-project">
+                                    <div className="card-link">
+                                        <h5 className="card-title">React Weather</h5>
+                                        <div>
+                                            <a className="link" target="blank" href="https://github.com/Mohamed20a/React-Weather-App"><i className="fa-brands fa-github" id="link"></i></a>
+                                            <a className="link" target="blank" href="https://react-weather1.netlify.app"><i className="fa-solid fa-up-right-from-square" id="link"></i></a>
+                                        </div>
+                                    </div>
+                                    <div className="item js-scroll fade-btm scrolled">
+                                        <a href="https://react-weather1.netlify.app" target="_blank" class="item-overlay">
+                                            <p className="demo">Live Demo <i class="fa-solid fa-link"></i></p>
+                                        </a>
+                                        <img src={rweather} className="card-img-top" alt="..." />
+                                    </div>
+                                    <div className="card-body">
+                                        <p className="card-text">A simple React weather app that allows you to get current weather information, based on the city you enter.</p>
+                                        
+                                    </div>
+                                </div>
+                                
                                 {/* Landing Page Card */}
                                 <div className="card col-md-6 col-lg-4 mb-5 p-3" data-aos="fade-up" data-aos-delay="6000" id="card-project">
                                     <div className="card-link">
                                         <h5 className="card-title">Landing Page</h5>
                                         <div>
-                                            <a className="link" target="blank" href="https://github.com/Mohamed20a/Udacity-landing-page"><i className="fa-brands fa-github"></i></a>
-                                            <a className="link" target="blank" href="https://mohamed20a.github.io/Udacity-landing-page/"><i className="fa-solid fa-up-right-from-square"></i></a>
+                                            <a className="link" target="blank" href="https://github.com/Mohamed20a/Udacity-landing-page"><i className="fa-brands fa-github" id="link"></i></a>
+                                            <a className="link" target="blank" href="https://mohamed20a.github.io/Udacity-landing-page/"><i className="fa-solid fa-up-right-from-square" id="link"></i></a>
                                         </div>
                                     </div>
                                     <div className="item js-scroll fade-btm scrolled">
                                         <a href="https://mohamed20a.github.io/Udacity-landing-page/" target="_blank" class="item-overlay">
-                                            <p className="demo">Live Demo</p>
+                                            <p className="demo">Live Demo <i class="fa-solid fa-link"></i></p>
                                         </a>
                                         <img src={Landing} className="card-img-top" alt="..." />
                                     </div>
@@ -222,13 +244,13 @@ render() {
                                     <div className="card-link">
                                         <h5 className="card-title">Today Quiz</h5>
                                         <div>
-                                            <a className="link" target="blank" href="https://github.com/Mohamed20a/quiz"><i className="fa-brands fa-github"></i></a>
-                                            <a className="link" target="blank" href="https://quiz-1.netlify.app"><i className="fa-solid fa-up-right-from-square"></i></a>
+                                            <a className="link" target="blank" href="https://github.com/Mohamed20a/quiz"><i className="fa-brands fa-github" id="link"></i></a>
+                                            <a className="link" target="blank" href="https://quiz-1.netlify.app"><i className="fa-solid fa-up-right-from-square" id="link"></i></a>
                                         </div>
                                     </div>
                                     <div className="item js-scroll fade-btm scrolled">
                                         <a href="https://quiz-1.netlify.app" target="_blank" class="item-overlay">
-                                            <p className="demo">Live Demo</p>
+                                            <p className="demo">Live Demo <i class="fa-solid fa-link"></i></p>
                                         </a>
                                         <img src={Quiz} className="card-img-top" alt="..." />
                                     </div>
@@ -243,13 +265,13 @@ render() {
                                     <div className="card-link">
                                         <h5 className="card-title">Dental Clinic</h5>
                                         <div>
-                                            <a className="link" target="blank" href="https://github.com/Mohamed20a/Dentel-Clinic"><i className="fa-brands fa-github"></i></a>
-                                            <a className="link" target="blank" href="https://drranasal.netlify.app/"><i className="fa-solid fa-up-right-from-square"></i></a>
+                                            <a className="link" target="blank" href="https://github.com/Mohamed20a/Dentel-Clinic"><i className="fa-brands fa-github" id="link"></i></a>
+                                            <a className="link" target="blank" href="https://drranasal.netlify.app/"><i className="fa-solid fa-up-right-from-square" id="link"></i></a>
                                         </div>
                                     </div>
                                     <div className="item js-scroll fade-btm scrolled">
                                         <a href="https://drranasal.netlify.app/" target="_blank" class="item-overlay">
-                                            <p className="demo">Live Demo</p>
+                                            <p className="demo">Live Demo <i class="fa-solid fa-link"></i></p>
                                         </a>
                                         <img src={Clinic} className="card-img-top" alt="..." />
                                     </div>
@@ -264,13 +286,13 @@ render() {
                                     <div className="card-link">
                                         <h5 className="card-title">Old Portofolio</h5>
                                         <div>
-                                            <a className="link" target="blank" href="https://github.com/Mohamed20a/My-Portfolio"><i className="fa-brands fa-github"></i></a>
-                                            <a className="link" target="blank" href="https://portfolioo-1.netlify.app/"><i className="fa-solid fa-up-right-from-square"></i></a>
+                                            <a className="link" target="blank" href="https://github.com/Mohamed20a/My-Portfolio"><i className="fa-brands fa-github" id="link"></i></a>
+                                            <a className="link" target="blank" href="https://portfolioo-1.netlify.app/"><i className="fa-solid fa-up-right-from-square" id="link"></i></a>
                                         </div>
                                     </div>
                                     <div className="item js-scroll fade-btm scrolled">
                                         <a href="https://portfolioo-1.netlify.app/" target="_blank" class="item-overlay">
-                                            <p className="demo">Live Demo</p>
+                                            <p className="demo">Live Demo <i class="fa-solid fa-link"></i></p>
                                         </a>
                                         <img src={Oportofolio} className="card-img-top" alt="..." />
                                     </div>
@@ -285,13 +307,13 @@ render() {
                                     <div className="card-link">
                                         <h5 className="card-title">Qr Code</h5>
                                         <div>
-                                            <a className="link" target="blank" href="https://github.com/Mohamed20a/QR-code"><i className="fa-brands fa-github"></i></a>
-                                            <a className="link" target="blank" href="https://qr-1-code.netlify.app/"><i className="fa-solid fa-up-right-from-square"></i></a>
+                                            <a className="link" target="blank" href="https://github.com/Mohamed20a/QR-code"><i className="fa-brands fa-github" id="link"></i></a>
+                                            <a className="link" target="blank" href="https://qr-1-code.netlify.app/"><i className="fa-solid fa-up-right-from-square" id="link"></i></a>
                                         </div>
                                     </div>
                                     <div className="item js-scroll fade-btm scrolled">
                                         <a href="https://qr-1-code.netlify.app/" target="_blank" class="item-overlay">
-                                            <p className="demo">Live Demo</p>
+                                            <p className="demo">Live Demo <i class="fa-solid fa-link"></i></p>
                                         </a>
                                         <img src={Qcode} className="card-img-top" alt="..." />
                                     </div>
@@ -306,13 +328,13 @@ render() {
                                     <div className="card-link">
                                         <h5 className="card-title">Landing Page</h5>
                                         <div>
-                                            <a className="link" target="blank" href="https://github.com/Mohamed20a/Frontend2"><i className="fa-brands fa-github"></i></a>
-                                            <a className="link" target="blank" href="https://sls-team2.netlify.app/"><i className="fa-solid fa-up-right-from-square"></i></a>
+                                            <a className="link" target="blank" href="https://github.com/Mohamed20a/Frontend2"><i className="fa-brands fa-github" id="link"></i></a>
+                                            <a className="link" target="blank" href="https://sls-team2.netlify.app/"><i className="fa-solid fa-up-right-from-square" id="link"></i></a>
                                         </div>
                                     </div>
                                     <div className="item js-scroll fade-btm scrolled">
                                         <a href="https://sls-team2.netlify.app/" target="_blank" class="item-overlay">
-                                            <p className="demo">Live Demo</p>
+                                            <p className="demo">Live Demo <i class="fa-solid fa-link"></i></p>
                                         </a>
                                         <img src={Landing1} className="card-img-top" alt="..." />
                                     </div>
@@ -327,8 +349,8 @@ render() {
                                     <div className="card-link">
                                         <h5 className="card-title">X-O Game</h5>
                                         <div>
-                                            <a className="link" target="blank" href="https://github.com/Mohamed20a/X-O-Game"><i className="fa-brands fa-github"></i></a>
-                                            <a className="link" target="blank" href="https://x-o-game11.netlify.app/"><i className="fa-solid fa-up-right-from-square"></i></a>
+                                            <a className="link" target="blank" href="https://github.com/Mohamed20a/X-O-Game"><i className="fa-brands fa-github" id="link"></i></a>
+                                            <a className="link" target="blank" href="https://x-o-game11.netlify.app/"><i className="fa-solid fa-up-right-from-square" id="link"></i></a>
                                         </div>
                                     </div>
                                     <div className="item js-scroll fade-btm scrolled">
@@ -348,8 +370,8 @@ render() {
                                     <div className="card-link">
                                         <h5 className="card-title">House Cleaning</h5>
                                         <div>
-                                            <a className="link" target="blank" href="https://github.com/Mohamed20a/House-Cleaning"><i className="fa-brands fa-github"></i></a>
-                                            <a className="link" target="blank" href="https://house-cleaniing.netlify.app/"><i className="fa-solid fa-up-right-from-square"></i></a>
+                                            <a className="link" target="blank" href="https://github.com/Mohamed20a/House-Cleaning"><i className="fa-brands fa-github" id="link"></i></a>
+                                            <a className="link" target="blank" href="https://house-cleaniing.netlify.app/"><i className="fa-solid fa-up-right-from-square" id="link"></i></a>
                                         </div>
                                     </div>
                                     <div className="item js-scroll fade-btm scrolled">
@@ -369,8 +391,8 @@ render() {
                                     <div className="card-link">
                                         <h5 className="card-title">Text File</h5>
                                         <div>
-                                            <a className="link" target="blank" href="https://github.com/Mohamed20a/File-Text"><i className="fa-brands fa-github"></i></a>
-                                            <a className="link" target="blank" href="https://text-file.netlify.app/"><i className="fa-solid fa-up-right-from-square"></i></a>
+                                            <a className="link" target="blank" href="https://github.com/Mohamed20a/File-Text"><i className="fa-brands fa-github" id="link"></i></a>
+                                            <a className="link" target="blank" href="https://text-file.netlify.app/"><i className="fa-solid fa-up-right-from-square" id="link"></i></a>
                                         </div>
                                     </div>
                                     <div className="item js-scroll fade-btm scrolled">
@@ -390,8 +412,8 @@ render() {
                                     <div className="card-link">
                                         <h5 className="card-title">Portfolio</h5>
                                         <div>
-                                            <a className="link" target="blank" href="https://github.com/Mohamed20a/portfolio2"><i className="fa-brands fa-github"></i></a>
-                                            <a className="link" target="blank" href="https://github.com/Mohamed20a/portfolio2"><i className="fa-solid fa-up-right-from-square"></i></a>
+                                            <a className="link" target="blank" href="https://github.com/Mohamed20a/portfolio2"><i className="fa-brands fa-github" id="link"></i></a>
+                                            <a className="link" target="blank" href="https://github.com/Mohamed20a/portfolio2"><i className="fa-solid fa-up-right-from-square" id="link"></i></a>
                                         </div>
                                     </div>
                                     <div className="item js-scroll fade-btm scrolled">
@@ -411,8 +433,8 @@ render() {
                                     <div className="card-link">
                                         <h5 className="card-title">Store</h5>
                                         <div>
-                                            <a className="link" target="blank" href="https://github.com/Mohamed20a/Frontend1"><i className="fa-brands fa-github"></i></a>
-                                            <a className="link" href="https://sls-team.netlify.app/"><i className="fa-solid fa-up-right-from-square"></i></a>
+                                            <a className="link" target="blank" href="https://github.com/Mohamed20a/Frontend1"><i className="fa-brands fa-github" id="link"></i></a>
+                                            <a className="link" href="https://sls-team.netlify.app/"><i className="fa-solid fa-up-right-from-square" id="link"></i></a>
                                         </div>
                                     </div>
                                     <div className="item js-scroll fade-btm scrolled">

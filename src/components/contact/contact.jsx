@@ -27,13 +27,13 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    try {
-      await sendEmail(); // استدعاء الدالة الجديدة لإرسال البريد الإلكتروني
-      setIsSent(true);                // تعيين حالة التأكيد إلى true
+    try {   
+      await sendEmail();
+      setIsSent(true);  
       setShowConfirmation(true);
 
       setTimeout(() => {
-        setShowConfirmation(false); // تعيين الحالة إلى false بعد 3 ثوانٍ
+        setShowConfirmation(false); 
       }, 3000);
 
       setName('');
@@ -87,12 +87,12 @@ const Contact = () => {
         <div className="container mx-auto">
             <div className="sentence-container">
               <div className="side-line" data-aos="fade-right" ></div>
-              <h2 data-aos="fade-left" ><span className="h2">04.</span>  Contact</h2>
+              <h2 data-aos="fade-left" style={{fontFamily: 'elmessiri-bold'}}><span className="h2">04.</span>  Contact</h2>
             </div>
           <div className="row justify-content-center" id="project-card">
             <div className="form-container">
             <div className="confirmation-message" style={{ display: showConfirmation ? 'block' : 'none' }}>
-                ✔ تم إرسال النموذج بنجاح
+                Registration Successful ✔ 
             </div>
               <div className="form">
                 <span className="heading">Get in touch</span>

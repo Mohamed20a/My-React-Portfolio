@@ -3,7 +3,7 @@ import AOS from "aos";
 import '../../style/about.css';
 import Footer from "../footer/footer";
 import SQL from '../../assets/img/mysql.png';
-import myImage from '../../assets/img/me.jpg';
+import myImage from '../../assets/img/me1.jpg';
 import ParticleBackground from "../ParticleBackground";
 
 
@@ -29,7 +29,7 @@ function About() {
         
                                 <div className="sentence-container " data-aos="fade-right" data-aos-delay="100">
                                     <div className="side-line"></div>
-                                    <h2 className="js-scroll fade-right scrolled"><span className="h2">02.</span> About</h2>
+                                    <h2 className="js-scroll fade-right scrolled" style={{fontFamily: 'elmessiri-bold'}}><span className="h2">02.</span> About</h2>
                                 </div>    
                                 
                                 <br/>
@@ -44,8 +44,9 @@ function About() {
                                 </p>
                             </div>
           
-                            <div className="col-lg-3 mx-auto fade-right scrolled" style={{textAlign: 'center'}}>
-                                <img className="img" src={myImage} alt="" />
+                            <div className="col-lg-3 mx-auto fade-right scrolled" style={{textAlign: '-webkit-center'}}>
+                                {/* <img className="img" src={myImage} alt="" /> */}
+                                <div id="me"></div>
                             </div>
 
                         </div>
@@ -59,7 +60,7 @@ function About() {
                                 <div className=" wow fadeInUp animated">
                                     <div className="p-4 row" id="card-resume">
 
-                                        <div className="section-buttons me-3 col-lg-3 col-md-6 mb-5 p-3 flex w-[370px] flex-row  font-mono text-sm text-primary md:w-hidden md:flex-col md:overflow-auto">
+                                        <div className="section-buttons me-3 col-lg-3 col-md-6 mb-5 p-3 flex w-[370px] flex-row font-mono text-sm text-primary md:w-hidden md:flex-col md:overflow-auto">
                                             <button className={`show-button ${activeTab === 'education' ? 'active' : ''}`} onClick={() => setActiveTab('education')}>Education</button>
                                             <button className={`show-button ${activeTab === 'experiences' ? 'active' : ''}`} onClick={() => setActiveTab('experiences')}>Experiences</button>
                                             <button className={`show-button ${activeTab === 'certification' ? 'active' : ''}`} onClick={() => setActiveTab('certification')}>Certification</button>
@@ -140,48 +141,7 @@ function About() {
                             </div>
                         </div>
                     </section> 
-
-                    {/* <div class="flex w-[370px] flex-row overflow-x-scroll font-mono text-sm text-primary md:w-auto md:flex-col  md:overflow-auto">
-                        <button class="w-auto whitespace-nowrap px-4 py-3 text-start text-xs transition-all duration-300 hover:bg-accent/10 hover:text-accent md:py-3 md:px-5 md:text-base ">Education</button>
-                        <button class="w-auto whitespace-nowrap px-4 py-3 text-start text-xs transition-all duration-300 hover:bg-accent/10 hover:text-accent md:py-3 md:px-5 md:text-base ">Organizations</button>
-                        <button class="w-auto whitespace-nowrap px-4 py-3 text-start text-xs transition-all duration-300 hover:bg-accent/10 hover:text-accent md:py-3 md:px-5 md:text-base ">Work Experience</button>
-                        <button class="w-auto whitespace-nowrap px-4 py-3 text-start text-xs transition-all duration-300 hover:bg-accent/10 hover:text-accent md:py-3 md:px-5 md:text-base ">Awards</button>
-                        <button class="w-auto whitespace-nowrap px-4 py-3 text-start text-xs transition-all duration-300 hover:bg-accent/10 hover:text-accent md:py-3 md:px-5 md:text-base bg-accent/10 text-accent">Certification</button>
-                    </div> */}
-
-                    {/* <div class="pt-[100px] pb-[50px] lg:pb-[60px]">
-                        <div class="flex flex-col items-center justify-center gap-5 pb-32">
-                            <div class="mb-5 flex w-full items-center justify-start gap-4 lg:w-[776px]">
-                                <h1 class="text-xl font-semibold text-secondary md:text-2xl aos-init aos-animate" data-aos="fade-left" data-aos-duration="300" data-aos-once="true">My Experience</h1>
-                                <div class="h-[1px] w-32 bg-primary md:w-96 aos-init aos-animate" data-aos="zoom-in-left" data-aos-duration="600" data-aos-once="true">
-                                    </div>
-                            </div>
-                                <div class="flex flex-col items-center gap-5 md:flex-row md:items-start md:gap-8 aos-init aos-animate" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
-                                    <div class="flex w-[370px] flex-row overflow-x-scroll font-mono text-sm text-primary md:w-auto md:flex-col  md:overflow-auto">
-                                        <button class="w-auto whitespace-nowrap px-4 py-3 text-start text-xs transition-all duration-300 hover:bg-accent/10 hover:text-accent md:py-3 md:px-5 md:text-base bg-accent/10 text-accent">Education</button>
-                                        <button class="w-auto whitespace-nowrap px-4 py-3 text-start text-xs transition-all duration-300 hover:bg-accent/10 hover:text-accent md:py-3 md:px-5 md:text-base ">Organizations</button>
-                                        <button class="w-auto whitespace-nowrap px-4 py-3 text-start text-xs transition-all duration-300 hover:bg-accent/10 hover:text-accent md:py-3 md:px-5 md:text-base ">Work Experience</button>
-                                        <button class="w-auto whitespace-nowrap px-4 py-3 text-start text-xs transition-all duration-300 hover:bg-accent/10 hover:text-accent md:py-3 md:px-5 md:text-base ">Awards</button>
-                                        <button class="w-auto whitespace-nowrap px-4 py-3 text-start text-xs transition-all duration-300 hover:bg-accent/10 hover:text-accent md:py-3 md:px-5 md:text-base ">Certification</button>
-                                    </div>
-                                    <div class="h-[480px] w-[350px] overflow-auto md:w-[490.78px] lg:w-[600px]">
-                                        <div class="text-primary">
-                                            <h3 class="text-lg font-medium leading-loose text-secondary md:text-xl">Informatics Engineering<br/>
-                                                <span class=" text-accent"> @<a href="https://informatika.ums.ac.id" target="_blank" rel="noreferrer" class="text-underline">Muhammadiyah Surakarta University</a></span>
-                                            </h3>
-                                            <p class="pb-5 font-mono text-sm lg:text-base">Aug 2020 - Present</p>
-                                            <ul class="flex list-inside list-disc flex-col gap-4 text-sm leading-relaxed lg:text-base">
-                                                <li>I enrolled in the Informatics Engineering program with the motivation that commercial
-                                                jobs would be replaced by technology in the future, so I decided to pursue this field of study.</li>
-                                                <li>During the first four semesters, I was more interested in graphic design and 3D modeling, and I even created a <a href="https://www.youtube.com/c/UlinnajaTbx" class="text-underline" target="_blank" rel="noreferrer">YouTube channel</a>
-                                                with content on Unity game modding, which now has over 20k++ subscribers.</li>
-                                                <li>Starting from the fifth semester, I realized that coding was my main goal in pursuing this major. Therefore, I began to learn about programming and fell in love with coding.</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                        </div>
-                    </div> */}
+                    
     
                     {/* Teck Section */}
                     <section className="py-20" >
@@ -190,7 +150,7 @@ function About() {
         
                                 <div className="sentence-container">
                                     <div className="side-line"  data-aos="fade-right" data-aos-delay="100"></div>
-                                    <h2 data-aos="fade-up" data-aos-delay="100">Tech stack</h2>
+                                    <h2 data-aos="fade-up" data-aos-delay="100" style={{fontFamily: 'elmessiri-bold'}}>Tech stack</h2>
                                 </div>
         
                                 <div className="col-lg-3 col-md-4 col-sm-6 col-6 col-xs-12 p-3" data-aos="fade-up" data-aos-delay="100">
@@ -285,7 +245,7 @@ function About() {
         
                                 <div className="sentence-container">
                                     <div className="side-line" data-aos="fade-right" data-aos-delay="100"></div>
-                                    <h2 data-aos="fade-up" data-aos-delay="100">Tools used</h2>
+                                    <h2 data-aos="fade-up" data-aos-delay="100" style={{fontFamily: 'elmessiri-bold'}}>Tools used</h2>
                                 </div>
         
                                 <div className="col-lg-3 col-md-4 col-sm-6 col-6 col-xs-12 p-3 fade-btm scrolled" >

@@ -29,10 +29,11 @@
     background: #d1e7dd;
     border: 1px #a3cfbb solid;
     padding: 1em;
-    width: 20em;
-    margin: -2em auto 3em;
+    width: 18em;
+    margin: -1em auto 3em;
     border-radius: 10px;
-    font-family: 'hala';
+    font-family: 'elmessiri-bold';
+    font-size: 17px;
 }
   .form-container .form .input {
     color: #87a4b6;

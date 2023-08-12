@@ -8,35 +8,37 @@ class Navbar extends Component {
     super(props);
     this.state = {
       isVisible: false,
+      isBlurred: false,
     };
   }
 
   handleToggleOffcanvas = () => {
     this.setState((prevState) => ({
       isVisible: !prevState.isVisible,
+      isBlurred: !prevState.isVisible,
     }));
   };
-
-  handleHideOffcanvas = (page) => {
-    this.setState({ isVisible: false });
+  
+  handleHideOffcanvas = () => {
+    this.setState({ isVisible: false, isBlurred: false });
   };
 
   render() {
-    const { isVisible } = this.state;
+    const { isVisible, isBlurred } = this.state;
 
     return (
       <nav className="navbar navbar-expand-lg  ">
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
-            <h2 style={{fontfamily: 'toyor-aljanah'}}> Mohamed <img style={{ width: '35px' }} src="https://img.icons8.com/external-others-inmotus-design/153/000000/external-Code-programming-others-inmotus-design-2.png" alt="شعار الموقع" /> </h2>
+            <h2 style={{fontfamily: 'toyor-aljanah', color: 'rgb(131 219 255/1)'}}> Mohamed <img style={{ width: '35px' }} src="https://img.icons8.com/fluency/48/source-code.png" alt="شعار الموقع" /> </h2>
           </Link>
           <button
-            className="navbar-toggler"
-            type="button"
-            onClick={this.handleToggleOffcanvas}
-            aria-controls="offcanvasNavbar"
-            aria-label="Toggle navigation"
-          >
+        className={`navbar-toggler ${isVisible ? "active" : ""}`}
+        type="button"
+        onClick={this.handleToggleOffcanvas}
+        aria-controls="offcanvasNavbar"
+        aria-label="Toggle navigation"
+      >
             <i className="fa-solid fa-bars-staggered"></i>
           </button>
           <div
@@ -51,15 +53,18 @@ class Navbar extends Component {
                 onClick={this.handleHideOffcanvas}
                 aria-label="Close"
               >
-                <span className="X"></span>
-                <span className="Y"></span>
-                <div className="close">Close</div>
+                {/* <span className="X"><i class="fa-solid fa-xmark"></i></span> */}
+                {/* <span className="Y"></span> */}
+                <i id="close" class="fa-solid fa-xmark"></i>
               </button>
             </div>
             <div className="offcanvas-body">
             <ul
                 className="navbar-nav justify-content-end flex-grow-1 pe-3"
-                onClick={this.handleHideOffcanvas}
+                onClick={() => {
+                  this.handleHideOffcanvas();
+                  this.setState({ isBlurred: false });
+                }}
               >
                 <li className="nav-item">
                   <Link className="nav-link" to="/" >
@@ -89,6 +94,10 @@ class Navbar extends Component {
             </div>
           </div>
         </div>
+        {isBlurred && (
+        <div className="blur-overlay" onClick={this.handleHideOffcanvas}></div>
+      )}
+
       </nav>
     );
   }

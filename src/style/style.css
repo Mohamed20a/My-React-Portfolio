@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   cursor: url('https://img.icons8.com/arcade/40/cursor.png'), auto;
-  /* cursor: url('https://img.icons8.com/color/40/nui2.png'), auto; */
 }
 html, body{
   --tw-bg-opacity: 1;
@@ -15,6 +14,21 @@ html, body{
   background-size: cover;
   background-position: center;
 }
+
+.blur-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px); 
+  z-index: 97; 
+  display: block;
+  pointer-events: auto;
+}
+
+
+
 #particles{
   height:100%;
 }
@@ -61,58 +75,13 @@ html, body{
 .button1 {
   position: relative;
   width: 6em;
-  height: 6em;
+  height: 7em;
   border: none;
   background: none;
 }
-
-.X {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 33%;
-  width: 2em;
-  height: 1.5px;
-  background-color: #0dcaf0;
-  transform: rotate(45deg);
-}
-
-.Y {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 33%;
-  width: 2em;
-  height: 1.5px;
-  background-color: #0dcaf0;
-  transform: rotate(-45deg);
-}
-
-.close {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  bottom: -40%;
-  left: 70%;
-  width: 3em;
-  height: 1.7em;
-  font-size: 16px;
-  background-color: rgb(254, 255, 225);
-  color: #000;
-  border: 1px solid #000;
-  pointer-events: none;
-  opacity: 0;
-}
-
-.button1:hover > .close {
-  animation: close 0.2s forwards 1.25s;
-}
-
-@keyframes close {
-  100% {
-    opacity: 1;
-  }
+#close{
+  font-size: 2.4em;
+    color: #0dcaf0;
 }
 .navbar {
   background-color: transparent;
@@ -121,20 +90,19 @@ html, body{
   align-items: center;
   gap: 12px;
   flex-wrap: wrap;
-  box-shadow: 0px 0px 2px 2px #32323212;
   padding: 1em !important;
   position: relative;
   z-index: 1;
 }
 .offcanvas{
-  background-color: rgb(17 24 39/1);
-  width: 75% !important;
+  background-color: rgb(20 31 54);
+  width: 50% !important;
 }
 .nav-item{
   margin-left: 1.5em;
 }
 .toggle-button {
-  display: none; /* Initially hide the button on larger screens */
+  display: none;
 }
 .num{
   font-size:15px;;
@@ -155,19 +123,19 @@ html, body{
 
 
 .blur-background {
-  filter: blur(5px); /* تعديل قيمة الـ blur حسب الحاجة */
-  pointer-events: none; /* يجعل العنصر غير قابل للنقر ليسمح للمحتوى تحته بالاستجابة للنقر */
+  filter: blur(5px);
+  pointer-events: none;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* لون خلفية ضبابية */
-  z-index: 1000; /* تأكد من أنه أعلى من محتوى الصفحة */
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1000;
 }
 
 .blurred {
-  filter: blur(5px); /* تعديل قيمة الـ blur حسب الحاجة */
+  filter: blur(5px); 
 }
 
 .navbar nav {
@@ -228,9 +196,7 @@ html, body{
 }
 
 .hamburger svg {
-  /* The size of the SVG defines the overall size */
   height: 3em;
-  /* Define the transition for transforming the SVG */
   transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .leFadeIn { animation-name: leFadeIn }
@@ -244,7 +210,6 @@ html, body{
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke-width: 3;
-  /* Define the transition for transforming the Stroke */
   transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
               stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -278,13 +243,14 @@ html, body{
 }
 
 .name {
-  font-size: 5vw; /* Use vw unit for font-size */
+  font-size: 5vw; 
+  font-family: 'elmessiri-bold';
 }
 
 .title {
   opacity: 0.7;
   font-weight: 600;
-  font-size: 4vw; /* Use vw unit for font-size */
+  font-size: 4vw; 
 }
 
 h2 {
@@ -362,7 +328,7 @@ footer {
   font-size: 24px;
   color: #fff;
 }
-.social-icon:hover{
+#iconi:hover{
   color: rgb(131 219 255/1);
   /* scale: 1.2; */
   transform: translateY(-6px);
@@ -392,23 +358,22 @@ footer {
 #icons{
   margin-top: 2em;
   margin-left: -1em;
+  position: relative;
+  z-index: 1;
 }
 .social-icon11{
   margin-right: 0.7em;
   color: #fff;
-  font-size: 23px;
+  font-size: 25px;
 }
-.social-icon11:hover{
+#icon-i:hover{
   transform: translateY(-6px);
   transition-duration: 0.5s;
 }
 @media (max-width: 1000px) {
-  /* Rest of your existing styles for .navbar, .container, h3, nav, a, .num, and p for small screens */
-
-  /* Show the toggle button on small screens */
   .toggle-button {
     display: block;
-    margin: 10px 0; /* Add some spacing between the button and the links */
+    margin: 10px 0; 
   }
 }
 @media (max-width: 992px) {
@@ -444,6 +409,9 @@ footer {
   .name{
     font-size: 3em;
   }
+  .offcanvas{
+    width: 70% !important;
+  }
 }
 @media (max-width: 480px) {
   .navbar {
@@ -452,6 +420,9 @@ footer {
   .hero-section .text-container {
      width: 99%;
      padding: 0 14px;
+  }
+  .offcanvas{
+    width: 70% !important;
   }
 }
 @media (max-width: 425px) {
@@ -462,6 +433,9 @@ footer {
      width: 99%;
      padding: 0 14px;
   }
+  .offcanvas{
+    width: 70% !important;
+  }
 }
 @media (max-width: 320px) {
   .navbar {
@@ -471,4 +445,7 @@ footer {
       width: 99%;
       padding: 0 14px;
  }
+ .offcanvas{
+  width: 70% !important;
+}
 }

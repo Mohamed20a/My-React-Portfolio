@@ -42,23 +42,27 @@
 .card-body{
     direction: ltr;
 }
-.img{
+#me{
+    height: 300px;
+    display: list-item;
     width: 18em;
     /* filter: grayscale(100%); */
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     margin-top: 3em;
     animation: morph 3s ease-in-out 1s infinite;
     background-blend-mode: multiply;
-    background-position: 50%;
+    background-image: url(../assets/img/me1.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    box-shadow: inset 0 0 0 9px hsla(0,0%,100%,.3) !important;
+    background-size: 23em;
     overflow: hidden;
+    bottom: 0;
+    box-shadow: inset 0 0 0 9px hsla(0,0%,100%,.3);
+    left: 0;
+    position: initial;
+    right: 0;
+    background-position-x: center;
+    background-position-y: 0px;
 }
-/* .img:hover {
-    filter: grayscale(0);
-    transition: 2s all;
-} */
 
 @keyframes morph {
     0% {
@@ -246,6 +250,9 @@
     color: rgb(131 219 255/1);
 }
 
+.overflow-x-scroll {
+    overflow-x: scroll;
+}
 
 .section-buttons {
     display: grid;
@@ -275,89 +282,26 @@
     background: rgb(131 219 255/.25);
 }
 
-/* .container {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-  }
-  
-  .box {
-    width: 60vmin;
-    height: 60vmin;
-    border: 1px dashed rgba(255,255,255,0.4);
-    position: relative;
-  }
-  
-  .box::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    border-radius: 50%;
-    border: 1px dashed rgba(255,255,255,0.4);
-    transform: scale(1.42);
-  }
-  
-  .spin-container {
-    width: 100%;
-    height: 100%;
-    animation: spin 12s ease-in-out infinite alternate;
-    position: relative;
-  }
-  
-  .shape {
-    width: 100%;
-    height: 100%;
-    transition: border-radius 1s ease-out;
-    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-    animation: morph 8s ease-in-out infinite both alternate;
-    position: absolute;
-    overflow: hidden;
-    z-index: 5;
-  }
-  
-  .bd {
-    width: 142%;
-    height: 142%;
-    position: absolute;
-    left: -21%;
-    top: -21%;
-    background: url(../assets/img/me.jpg);
-    background-size: 100%;
-    background-position: center center;
-    display: flex;
-    color: #003;
-    font-size: 5vw;
-    font-weight: bold;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    text-transform: uppercase;
-    animation: spin 12s ease-in-out infinite alternate-reverse;
-    opacity: 1;
-    z-index: 2;
-  }
-  
-  @keyframes morph {
-    0% {border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%;} 
-    100% {border-radius: 40% 60%;} 
-  }
-  
-  @keyframes spin {
-    to {
-      transform: rotate(1turn);
+  @media (max-width: 425px) {
+    #img {
+        margin-right: 0.5em;
+        font-size: 23px !important;
     }
-  } */
-  
-
-
-  
-
-
+    .card-num {
+        font-size: 14px !important;
+        color: #fff;
+    }
+  }
+  @media (max-width: 320px) {
+    #img {
+        margin-right: 0.5em;
+        font-size: 23px !important;
+    }
+    .card-num {
+        font-size: 10px !important;
+        color: #fff;
+    }
+  }
 
 @media (max-width: 472px) {
     #img{
