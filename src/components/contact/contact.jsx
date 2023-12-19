@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../../style/contact.css";
 import Footer from "../footer/footer";
+import { validateForm } from './count';
 import ParticleBackground from "../ParticleBackground";
 
 
@@ -68,24 +69,27 @@ const Contact = () => {
       });
 
       if (response.ok) {
-        console.log('تم إرسال النموذج بنجاح!');
+        console.log('Done!');
       } else {
-        console.error('حدث خطأ أثناء إرسال النموذج.');
+        console.error('Error');
       }
     } catch (error) {
-      console.error('حدث خطأ أثناء إرسال النموذج:', error);
+      console.error('Error:', error);
     }
   };
+
+  useEffect(() => {
+    validateForm();
+  }, []);
 
   return (
     <div>
       <div className="contact">
-      {/* <ParticleBackground className="ParticleBackground" /> */}
 
         <div className="container mx-auto">
             <div className="sentence-container">
               <div className="side-line" data-aos="fade-right" ></div>
-              <h2 data-aos="fade-left" style={{fontFamily: 'elmessiri-bold'}}><span className="h2">04.</span>  Contact</h2>
+              <h2 data-aos="fade-left" style={{fontFamily: 'elmessiri-bold'}}><span className="h2">04.</span>  Contact US</h2>
             </div>
           <div className="row justify-content-center" id="project-card">
             <div className="form-container">
@@ -95,34 +99,10 @@ const Contact = () => {
               <div className="form">
                 <span className="heading">Get in touch</span>
                 <form onSubmit={handleSubmit}>
-                  <input
-                    placeholder="Name"
-                    type="text"
-                    className="input"
-                    value={name}
-                    onChange={handleNameChange}
-                    required
-                  />
-                  <input
-                    placeholder="Email"
-                    type="email"
-                    className="input"
-                    value={email}
-                    onChange={handleEmailChange}
-                    required
-                  />
-                  <textarea
-                    placeholder="Say Hello"
-                    rows="10"
-                    cols="30"
-                    maxlength="350"
-                    id="message"
-                    name="message"
-                    className="textarea"
-                    value={message}
-                    onChange={handleMessageChange}
-                    required
-                  />
+                  <input placeholder="Name" type="text" className="input" value={name} onChange={handleNameChange} required />
+                  <input placeholder="Email" type="email" className="input" value={email} onChange={handleEmailChange} required />
+                  <textarea placeholder="Say Hello" rows="10" cols="30" maxlength="350" id="message" name="message" className="textarea" value={message} onChange={handleMessageChange} required />
+                  <p id="charCount"></p>
                   <div className="button-container">
                     <button type="submit" className="send-button" onClick={handleSubmit}>
                       Send
