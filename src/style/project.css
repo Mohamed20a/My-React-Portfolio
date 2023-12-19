@@ -95,11 +95,44 @@
 .card-title{
   color: rgb(131 219 255/1);
 }
+.card .body-flex{
+    height: 140px;
+    overflow: auto;
+}
+/* Overflow Style */
+.card .body-flex::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background: bottom;
+	border-radius: 10px;
+}
+.card .body-flex::-webkit-scrollbar{
+	width: 7px;
+	background: bottom;
+}
+.card .body-flex::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	background: rgb(90, 159, 186);
+}
 .card-link{
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     margin-bottom: 1em;
+}
+.lang{
+  margin-top: 1em;
+}
+.lang-tool{
+    font-size: 13px;
+    font-family: monospace;
+    color: #abadb0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+}
+.lang-tool #icon-lang{
+  font-size: 20px;
 }
 .demo{
     color: #ffffff;
@@ -112,7 +145,6 @@
 #project-card{
     margin: 1em;
 }
-
 #card-project{
     background-color: #303844;
 }
@@ -214,4 +246,13 @@
 .link-text {
   font-size: 20px;
   color: #fff;
+}
+
+
+
+@media (max-width: 472px){ 
+.md\:overflow-auto {
+    overflow: auto;
+    height: 9em;
+}
 }
