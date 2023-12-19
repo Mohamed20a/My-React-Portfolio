@@ -1,12 +1,10 @@
 import React, {Component} from "react";
 import AOS from "aos";
-import Footer from "../footer/footer";
 import '../../style/style.css';
 import '../../fontawesome.min.css';
 import ParticleBackground from "../ParticleBackground";
 import WordFlick from "./WordFlick";
 
-// import ParticlesAnimation from '../ParticlesAnimation';
 
 class Home extends Component {
     componentDidMount() {
@@ -16,19 +14,16 @@ class Home extends Component {
         return(
             <div>
                 <div className='home'>
-                    {/* <ParticlesAnimation /> */}
                     <ParticleBackground className="ParticleBackground" />
 
                     <div className="container" id="home">
                         <p className="p"> Hi, my name is</p>
                         <h1 className="name js-scroll fade-left scrolled"> Mohamed Ahmed</h1>
-                        {/* <h1 className="title">I build things for the web.</h1> */}
-                        {/* <h2 className="word">Full Stack Web Developer</h2> */}
                         <h2 className=" font-bold text-2xl dark:text-slate-50 " style={{color: 'rgb(131 219 255/1)'}}>
                             <WordFlick />
                             <span>|</span>{" "}
                         </h2>
-                        <a href="https://drive.google.com/file/d/1EQv-moVxO0XbHNfMLKK3b1u27brKzQz0/view" target="blank">
+                        <a href="https://drive.google.com/file/d/1Icgr9UxiM_cI_qsWsdpxB_cjeRMOhRBq/view?usp=sharing" target="blank">
                             <button className="button">
                                 View My CV Here!
                             </button>
